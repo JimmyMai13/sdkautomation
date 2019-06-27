@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="7" result="Failed" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-06-27 14:17:48Z" end-time="2019-06-27 14:17:49Z" duration="0.968542">
+  <command-line><![CDATA[C:\NUnit.org\nunit-console\nunit3-console.exe Regression_CS/bin/Debug/Regression_CS.dll --result Regression_CS/results/RegressionCSTestResults.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1012" name="Regression_CS.dll" fullname="C:\Users\qa-test\Regression_CS\Regression_CS\bin\Debug\Regression_CS.dll" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2019-06-27 14:17:49Z" end-time="2019-06-27 14:17:49Z" duration="0.184634" total="7" passed="0" failed="7" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="C:\Users\qa-test\Regression_CS" machine-name="WIN7T32" user="Administrator" user-domain="WIN7T32" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\qa-test\Regression_CS" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="5608" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="SetUpFixture" id="0-1009" name="ISAgentTest" fullname="ISAgentTest.ISAgentTestSetup" classname="ISAgentTest.ISAgentTestSetup" runstate="Runnable" testcasecount="7" result="Failed" label="Error" site="SetUp" start-time="2019-06-27 14:17:49Z" end-time="2019-06-27 14:17:49Z" duration="0.143050" total="7" passed="0" failed="7" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        <stack-trace><![CDATA[   at ISAgentTest.ISAgentTestSetup.Setup()]]></stack-trace>
+      </failure>
+      <output><![CDATA[FINISHED
+]]></output>
+      <test-suite type="TestFixture" id="0-1000" name="ISAgentNetWrapperTestCreateDevice" fullname="ISAgentTest.ISAgentNetWrapperTestCreateDevice" classname="ISAgentTest.ISAgentNetWrapperTestCreateDevice" runstate="Runnable" testcasecount="3" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="0-1003" name="AgentCreateDevice" fullname="ISAgentTest.ISAgentNetWrapperTestCreateDevice.AgentCreateDevice" methodname="AgentCreateDevice" classname="ISAgentTest.ISAgentNetWrapperTestCreateDevice" runstate="Ignored" seed="1282599338" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <properties>
+          <property name="Category" value="CreateDevice" />
+          <property name="_SKIPREASON" value="Not automating CreateDevice at this time" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-case id="0-1001" name="AgentCreateDeviceNoInit" fullname="ISAgentTest.ISAgentNetWrapperTestCreateDevice.AgentCreateDeviceNoInit" methodname="AgentCreateDeviceNoInit" classname="ISAgentTest.ISAgentNetWrapperTestCreateDevice" runstate="Runnable" seed="1444814126" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <properties>
+          <property name="Category" value="CreateDevice" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-case id="0-1002" name="AgentCreateDeviceSetRsaKey" fullname="ISAgentTest.ISAgentNetWrapperTestCreateDevice.AgentCreateDeviceSetRsaKey" methodname="AgentCreateDeviceSetRsaKey" classname="ISAgentTest.ISAgentNetWrapperTestCreateDevice" runstate="Runnable" seed="1396753427" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <properties>
+          <property name="Category" value="CreateDevice" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-suite type="TestFixture" id="0-1006" name="ISAgentTestBasic" fullname="ISAgentTest.ISAgentTestBasic" classname="ISAgentTest.ISAgentTestBasic" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="0-1008" name="AgentBasicMetadata" fullname="ISAgentTest.ISAgentTestBasic.AgentBasicMetadata" methodname="AgentBasicMetadata" classname="ISAgentTest.ISAgentTestBasic" runstate="Runnable" seed="797017022" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-case id="0-1007" name="AgentBasicTestKeys" fullname="ISAgentTest.ISAgentTestBasic.AgentBasicTestKeys" methodname="AgentBasicTestKeys" classname="ISAgentTest.ISAgentTestBasic" runstate="Runnable" seed="1804380538" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-suite type="TestFixture" id="0-1004" name="ISAgentTestConfig" fullname="ISAgentTest.ISAgentTestConfig" classname="ISAgentTest.ISAgentTestConfig" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="0-1005" name="AgentConfigInitBasic" fullname="ISAgentTest.ISAgentTestConfig.AgentConfigInitBasic" methodname="AgentConfigInitBasic" classname="ISAgentTest.ISAgentTestConfig" runstate="Runnable" seed="593429026" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+      <test-suite type="TestFixture" id="0-1010" name="TestProfilePersistor" fullname="ISAgentTest.TestProfilePersistor" classname="ISAgentTest.TestProfilePersistor" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="0-1011" name="TestDefaultPersistor" fullname="ISAgentTest.TestProfilePersistor.TestDefaultPersistor" methodname="TestDefaultPersistor" classname="ISAgentTest.TestProfilePersistor" runstate="Runnable" seed="1588981057" result="Failed" label="Error" site="Parent" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.000000" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.BadImageFormatException : Could not load file or assembly 'ISAgentSDKNetWrapper, Version=1.0.6905.29019, Culture=neutral, PublicKeyToken=156a4037129aca6d' or one of its dependencies. An attempt was made to load a program with an incorrect format.]]></message>
+        </failure>
+      </test-case>
+    </test-suite>
+  </test-suite>
+</test-run>
